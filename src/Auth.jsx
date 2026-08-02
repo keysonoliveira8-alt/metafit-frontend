@@ -55,4 +55,4 @@ export default function Auth() {
     } else {
       const { error } = await supabase.auth.signUp({ email, password });
       if (error) setError(traduzErro(error.message));
-      else setInfo("Conta criada! Verifique seu e-mail para confirmar
+      else setInfo('Conta criada! Verifique seu e-mail para confirmar o cadastro.');
